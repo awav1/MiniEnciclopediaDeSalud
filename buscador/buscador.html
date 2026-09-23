@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Buscador - Mini Enciclopedia de Salud</title>
+	</head>
+
+
+	<body>
+
+		<header>
+			<a href="../index.html"> <img src="../imagenes/logo.png" alt=""></a>
+			<h1>Mini Enciclopedia de Salud - Buscador</h1>
+			<p>Información sobre enfermedades, síntomas, pruebas y tratamientos.</p>
+		</header>
+
+		<nav>
+			<h2>Menú de navegación</h2>
+			<ul>
+				<li><a href="../index.html">Página principal</a></li>
+			</ul>
+		</nav>
+
+		<main>
+
+			<h2>Buscador</h2>
+			<p>Rellene el siguiente formulario para acceder a su búsqueda</p>
+		
+			<form action="buscadorrespuesta.html" method="post">
+
+				<p>Los campos que no están indicados como obligatorios son opcionales.</p>
+				<p>En los campos Síntomas y Pruebas y exámenes puede seleccionar una o varias opciones. Dependiendo del dispositivo que esté usando:</p>
+				<ul>
+					<li>Windows: mantenga pulsada la tecla Ctrl.</li>
+					<li>Linux: mantenga pulsada la tecla Ctrl.</li>
+					<li>macOS: mantenga pulsada la tecla Command (⌘).</li>
+					<li>Smartphones y otros dispositivos táctiles: toque las opciones que desee seleccionar.</li>
+				</ul>
+
+				<p><label>Descripción (obligatoria): <input type="search" name="descripcion" placeholder="Ej.: Gripe" required></label></p>
+				<p><label>Causas: <input type="text" name="causas" placeholder="Ej.: Virus"></label></p>
+				
+				<p>
+					<label>Síntomas (Puede seleccionar una o varias opciones):
+						<select name="síntomas" multiple>
+							<option value="fiebre">Fiebre</option>
+							<option value="vómito">Vómito</option>
+							<option value="dolormuscular">Dolor muscular</option>
+							<option value="tos">Tos</option>
+							<option value="nauseas">Náuseas</option>
+							<option value="cefalea">Cefalea</option>
+							<option value="fatiga">Fatiga</option>
+						</select>
+					</label>
+				</p>
+				
+				<p>
+					<label>Pruebas y exámenes: (Puede seleccionar una o varias opciones):
+						<select name="pruebasyexamenes" multiple>
+							<option value="análisissangre">Análsis de sangre</option>
+							<option value="ecografía">Ecografía</option>
+							<option value="radiografía">Radiografía</option>
+							<option value="tomografía">Tomografía</option>
+							<option value="ultrasonido">Ultrasonido</option>
+							<option value="colonoscopia">Colonoscopia</option>
+						</select>
+					</label>
+				</p>
+
+				<p><label>Tratamiento: <input type="text" name="tratamiento"  placeholder="Ej.: Antivirales"></label></p>
+				
+				<fieldset>
+					<legend>Expectativas:</legend>
+					<label><input type="radio" name="expectativas" value="negativas"> Negativas </label>
+					<label><input type="radio" name="expectativas" value="sindefinir"> Sin definir </label>
+					<label><input type="radio" name="expectativas" value="positivas"> Positivas </label>
+				</fieldset>
+				
+				<p><input type="submit" value="Buscar"></p>
+
+			</form>
+
+		</main>
+
+		<footer>
+            <p><a href="../contacto/contacto.html">Contacto</a></p>
+			<p>Autoras: Ainara Wen Aroca Vilella e Irene Pedroso Marco</p>
+			<p>&copy; 2026 Mini Enciclopedia de Salud</p>
+			<p>Universidad de Alicante - Grado en Ingeniería Biomédica</p>
+		</footer>
+
+	</body>
+
+</html>
